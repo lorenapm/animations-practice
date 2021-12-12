@@ -1,5 +1,11 @@
 # CSS: Animations and transitions 
 Practice of animations and transitions in CSS
+## Animate landing page
+Create a landing page with animations only with CSS. 
+
+https://user-images.githubusercontent.com/81964101/145714255-92a1a342-956d-410c-a5d4-633958be0d00.mp4
+
+
 
 ## Gallery
 Create a gallery with lightbox efect only with transform and transitions. Cuando clicas la imagen, aparece tipo slide la imagen referenciada mediante anclas(target). Es una práctica de CSS transitions, en la realidad utilizaría JavaScript para hacer un uso más óptimo de los recursos. Uso CSS Grid para crear galería responsive.
