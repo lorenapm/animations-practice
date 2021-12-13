@@ -19,8 +19,48 @@ body {
 
 .nav {
   background: blueviolet;
+  height: 80px;
+}
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .nav__img {
   display: block;
   width: 35px;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+}
+.nav__checkbox {
+  display: none;
+}
+/* con el "+" le decimos que cualquier elemento que tenga checked, su hermano adyacente tenga las propiedades */
+.nav__checkbox:checked ~ .nav__items {
+  transform: translate(0);
+}
+.nav__icon {
+  cursor: pointer;
+}
+.nav__items {
+  position: fixed;
+  /* 80px porque es el height del nav, así empieza desde ahí abajo*/
+  top: 80px;
+  right: 0;
+  background: rgb(117, 117, 117);
+  height: 100%;
+  width: 60%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* traslate del 100% del elemento en X lo oculta ala derecha*/
+  transform: translate(100%);
+  transition: 0.4s transform;
 }
