@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.svg {
+  width: 500px;
+}
+#globo {
+  transform: scale(0.2);
+  transform-origin: top;
+  animation: 2s 3s animate forwards;
+}
+#backgruond {
+  transform: translate(-100%);
+  animation: 3s animate forwards;
+}
+@keyframes animate {
+  /* solo le digo que vaya a transform a su propiedad origin, nos permite reutilizar keyframes en ambas ilustraciones*/
+  to {
+    transform: unset;
+  }
+}
