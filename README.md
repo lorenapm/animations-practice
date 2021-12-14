@@ -15,8 +15,6 @@ https://user-images.githubusercontent.com/81964101/145714255-92a1a342-956d-410c-
 Create a gallery with lightbox efect only with transform and transitions. Cuando clicas la imagen, aparece tipo slide la imagen referenciada mediante anclas(target). Es una práctica de CSS transitions, en la realidad utilizaría JavaScript para hacer un uso más óptimo de los recursos. Uso CSS Grid para crear galería responsive.
 <img width="1152" alt="gallery1" src="https://user-images.githubusercontent.com/81964101/145711021-b046b110-da7b-49ee-9dc4-cbf8fc9a2856.png"><img width="1152" alt="gallery2" src="https://user-images.githubusercontent.com/81964101/145711027-cb07bf22-b62c-4b25-9368-0a2f9383c2bc.png">
 
-
-
 ## Lightbox
 Create a lightbox only with transform and transitions. Cuando clicas la imagen, aparece tipo slide la referenciada mediante anclas.
 
