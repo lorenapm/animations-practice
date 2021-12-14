@@ -6,6 +6,10 @@ Animate ilustration with Figma and CSS.
 
 https://user-images.githubusercontent.com/81964101/145988560-0983bbbe-d842-4d62-bcd4-fdc1a68b0a20.mp4
 
+https://user-images.githubusercontent.com/81964101/146009893-280fb894-779e-458f-9ef4-02848b43e8b0.mp4
+
+
+
 ## Animate modal
 Create a modal with transitions and use custom properties (only with CSS).
 
