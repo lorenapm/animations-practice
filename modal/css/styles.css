@@ -1,5 +1,8 @@
 :root {
-  --clip: circle(150% at top right);
+  --clip: circle(0% at top right);
+  --show: scale(0);
+  --transitionModal: 0.5s transform;
+  --transitionBackground: 1s 0.5s clip-path;
 }
 
 * {
@@ -9,6 +12,10 @@
 }
 body {
   font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal {
   position: fixed;
@@ -19,6 +26,15 @@ body {
   background: rgba(0, 0, 0, 0.803);
   display: flex;
   clip-path: var(--clip);
+  transition: var(--transitionBackground);
+}
+.modal:target {
+  --clip: circle(150% at top right);
+  /* transition: 2s clip-path; */
+
+  --show: scale(1);
+  --transitionModal: 0.5s 1s transform;
+  --transitionBackground: 1s clip-path;
 }
 .modal__container {
   background: white;
@@ -30,6 +46,8 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(4, 1fr);
   position: relative;
+  transform: var(--show);
+  transition: var(--transitionModal);
 }
 .modal__img {
   width: 80%;
@@ -74,6 +92,16 @@ body {
 
   background: slateblue;
   padding: 15px 50px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5%;
+}
+.cta {
+  display: inline-block;
+  height: 60px;
+  background: slateblue;
+  padding: 15px 50px;
+  font-size: 24px;
   color: white;
   text-decoration: none;
   border-radius: 5%;
