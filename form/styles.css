@@ -29,7 +29,6 @@ body {
   border-radius: 8px;
   grid-column: 1/4;
   grid-row: 2/3;
-
   box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
   display: grid;
   grid-template-rows: max-content max-content 1fr;
@@ -42,4 +41,69 @@ body {
   background-image: url(img/background.jpg);
   background-size: cover;
   border-radius: 16px;
+}
+.form__groups {
+  position: relative;
+}
+.form__title {
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+  color: #2196f3;
+}
+.form__paragraph {
+  color: #929296;
+  line-height: 1.5;
+}
+.form__link {
+  color: #151212;
+}
+.form__inputs {
+  margin-top: 40px;
+  display: grid;
+  gap: 2em;
+}
+.form__input {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: none;
+  color: #6c6c6c;
+  outline: none;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-bottom: 1px solid #49454567;
+  font-family: "Poppins", sans-serif;
+}
+.form__input:focus {
+  color: rgb(94, 93, 93);
+}
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  color: #2196f3;
+  transform: scale(0.7) translateY(-34px);
+  transform-origin: top left;
+}
+.form__input:focus ~ .form__bar {
+  transform: scale(1);
+}
+.form__bar {
+  position: absolute;
+  border-bottom: 1px solid #2196f3;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.3s transform;
+  transform-origin: left bottom;
+}
+.form__label {
+  position: absolute;
+  color: #49454567;
+  font-size: 1rem;
+  left: 5px;
+  top: 10px;
+  /* para no poder tocar el label y poder escribir sobre el input*/
+  pointer-events: none;
+  transition: 0.5s transform, color 0.3s;
 }
