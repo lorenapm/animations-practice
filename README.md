@@ -1,21 +1,24 @@
 # CSS: Animations and transitions 
 Practice of animations and transitions in CSS
 
-## Animate SVG
+## Animated SVG
 Animate ilustration with Figma and CSS.
 
 https://user-images.githubusercontent.com/81964101/145988560-0983bbbe-d842-4d62-bcd4-fdc1a68b0a20.mp4
 
 https://user-images.githubusercontent.com/81964101/146009893-280fb894-779e-458f-9ef4-02848b43e8b0.mp4
 
+## Animated Form
+Animate form only use HTML and CSS.
 
+https://user-images.githubusercontent.com/81964101/146174170-6482e0b5-669f-49af-9663-a6027d34873f.mp4
 
-## Animate modal
+## Animated modal
 Create a modal with transitions and use custom properties (only with CSS).
 
 https://user-images.githubusercontent.com/81964101/145972045-53217bcd-8135-46f7-872e-f57e3027465e.mp4
 
-## Animate landing page
+## Animated landing page
 Create a landing page with animations only with CSS. 
 
 https://user-images.githubusercontent.com/81964101/145714255-92a1a342-956d-410c-a5d4-633958be0d00.mp4
